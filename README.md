@@ -28,3 +28,29 @@ This project demonstrates how to create an interactive UI with basic mathematica
     CSS3 – Styling and layout using Grid
     
     JavaScript (ES6) – Logic and interactivity
+🧠 Working Principle
+
+    User inputs numbers and operators via buttons
+    
+    Input is shown on the display screen
+    
+    JavaScript handles calculations using event listeners
+    
+    Errors are handled gracefully using conditional checks
+
+🎯 Learning Outcomes
+
+    Understanding DOM manipulation
+    
+    Using CSS Grid for layouts
+    
+    Handling events in JavaScript
+    
+    Implementing basic arithmetic logic
+    
+    Improving UI/UX design skills
+
+👤 Author
+
+    Avdhut Dhawade
+    Engineering Student | Web Development Enthusiast
