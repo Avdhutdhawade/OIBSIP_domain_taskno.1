@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(135deg, #4f8cc9, #6fb1fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 22px;
+    border-radius: 18px;
+    width: 280px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔷 Display Screen */
+#display {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 18px;
+    font-size: 28px;
+    text-align: right;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1a2b42;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+/* 🔢 Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* 🔘 General Buttons */
+button {
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.85);
+    color: #1a2b42;
+    transition: all 0.15s ease;
+}
+
+/* Hover & Active */
+button:hover {
+    transform: translateY(-2px);
+    background: #e2efff;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* 🟠 Operator Buttons */
+button:nth-child(4n),
+button:nth-child(3),
+button:nth-child(1),
+button:nth-child(2) {
+    background: linear-gradient(135deg, #ff9f43, #ff7b00);
+    color: white;
+}
+
+button:nth-child(4n):hover,
+button:nth-child(3):hover,
+button:nth-child(1):hover,
+button:nth-child(2):hover {
+    background: linear-gradient(135deg, #ffb066, #ff8c1a);
+}
+
+/* 🔵 Equal Button */
+.equal {
+    background: linear-gradient(135deg, #4f8cc9, #2e6edb);
+    color: white;
+    font-weight: bold;
+}
+
+.equal:hover {
+    background: linear-gradient(135deg, #6fa3ff, #3b82f6);
+}
+
+/* 🔷 Zero Button */
+.zero {
+    grid-column: span 2;
+}
